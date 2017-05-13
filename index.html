@@ -1,6 +1,49 @@
-<html>
-Salut
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<img src="https://123soleil.000webhostapp.com/BogossClicker_files/bogoss.png" id="moi" style="width: 35%;">
+<h1 id="gignac">10 bogoss</h1>
 <script>
-alert('salut')
+document.getElementById("moi").onclick = rotasse;
+document.getElementById("moi").onmouseover = petasse;
+document.getElementById("moi").onmouseout = cacasse;
+bogoss = 0;
+function rotasse() {
+  bogoss++;
+  document.getElementById("gignac").innerHTML = bogoss + ' bogoss'
+  document.getElementById("moi").style.width = "37%"
+  window.setTimeout(gino, 200);
+}
+function petasse() {
+  document.getElementById("moi").style.width = "33%"
+}
+function cacasse() {
+  document.getElementById("moi").style.width = "35%"
+}
+function gino() {
+  document.getElementById("moi").style.width = "35%"
+}
 </script>
-</html>
+<style>
+html {
+    background: url(http://i494.photobucket.com/albums/rr302/prozak87/Asesinos/seizure.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#moi {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+#gignac {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 3%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  height: 8%;
+}
+</style>
+</body></html>
